@@ -1,0 +1,577 @@
+.centrar{
+  text-align: right;
+}
+.rojo{
+  color: red;
+}
+.verde{
+  color: green;
+}
+.plomo{
+  color: #565656;
+}
+.plomo:hover{
+  color: #bdbdbd;
+}
+.list_usuarios {
+	
+	border-collapse:collapse;
+	padding:6px;
+	width: 840px;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+
+}
+.list_usuarios .th {
+	border:1px solid #003042;
+	padding:6px;
+  color: white;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#003042+0,003c53+100 */
+background: rgb(0,48,66); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(0,48,66,1) 0%, rgba(0,60,83,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(0,48,66,1) 0%,rgba(0,60,83,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(0,48,66,1) 0%,rgba(0,60,83,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#003042', endColorstr='#003c53',GradientType=0 ); /* IE6-9 */
+
+}
+.list_usuarios .td {
+	border-bottom:1px solid #dd9100;
+	border-left:1px solid #e7f3f3;
+	text-align:left;
+	padding:3px 10px;
+	font-size: 14px;
+  font-weight: bold;
+  line-height:40px;
+}
+.list_usuarios .tr:last-child .td {
+	border-bottom: none;
+}
+.list_usuarios .td:first-child{
+	border-left:1px solid #003042;
+}
+.list_usuarios .td:last-child{
+	border-right:1px solid #003042;
+}
+.list_usuarios .caja .td:first-child,  .list_usuarios .caja .td:last-child{
+	border-right:none;
+  border-left:none;
+}
+
+.list_usuarios .tr:hover, .list_usuarios .select{
+	background: #ffe0b1;
+	cursor: pointer;
+	color: white;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffa33a+1,f7a400+47,ffa33a+92 */
+background: rgb(255,163,58); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(255,163,58,1) 1%, rgba(247,164,0,1) 47%, rgba(255,163,58,1) 92%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(255,163,58,1) 1%,rgba(247,164,0,1) 47%,rgba(255,163,58,1) 92%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(255,163,58,1) 1%,rgba(247,164,0,1) 47%,rgba(255,163,58,1) 92%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffa33a', endColorstr='#ffa33a',GradientType=0 ); /* IE6-9 */
+
+}
+.tdfoto{
+  padding: 0px;
+  margin: 0px;
+  width: auto;
+  line-height:40px;
+}
+.list_usuarios #img_perfil{
+  padding: 0px;
+  width:40px;
+  height: 40px;
+  text-align: center;
+  line-height:40px;
+  border-radius: 50%;
+-moz-border-radius: 50%;
+-webkit-border-radius: 50%; 
+overflow: hidden; 
+border: 2px solid white;
+background: white;
+display: inline-block;
+vertical-align:middle;
+}
+.list_usuarios #img_perfil img{
+  vertical-align:middle;
+  max-width:40px;
+  max-height: 40px;
+  
+}
+.list_usuarios .caja:hover {
+	background: none;
+	cursor: initial;
+	color: #001015;
+}
+.list_usuarios .caja .td{
+  padding: 0px; 
+  width: 100%;	
+}
+
+#nav_menu{
+  display: none;
+}
+/*
+
+                  */
+
+.list_usuarios .caja {
+	/*display:none;*/
+  padding: 0px;
+  margin:0px;
+  width: 100%;
+  height: auto;
+  
+}
+.azul{
+	color: #006085;
+	font-size: 22px;
+}
+
+
+
+#c_estadisticas{
+   display: block;
+}
+.cortina .nav{
+  display: block;
+}
+.nav{
+  display: none;
+  border: 1px solid #FF8000;
+}
+.nav ul {
+  *zoom: 1;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background: #333;
+}
+.nav ul:before,
+.nav ul:after {
+  content: "";
+  display: table;
+}
+.nav ul:after {
+  clear: both;
+}
+.nav ul > li {
+  float: left;
+  position: relative;
+}
+
+.nav a {
+  display: block;
+  text-decoration: none;
+  padding: 10px 20px;
+  line-height: 1.2em;
+  color: #fff;
+  border-left: 1px solid #595959;
+  font-size: 18px;
+  font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+}
+.nav a:hover {
+  cursor:pointer;
+  background: #FF8000;
+  color: white;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.nav a.current{
+  background: #FF8000;
+  color: white;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.nav1 ul > li:hover ul {
+  left: 0;
+}
+.nav1 li ul {
+  position: absolute;
+  left: -9999em;
+  top: 36px;
+  z-index: 1;
+}
+.menu_user{
+	display:inline-block;
+  width: 100%;
+  
+  border: none;
+  margin-top:0px;
+  margin-left: 0px;
+  background: transparent;
+  padding: 10px;
+  display: none;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 3s;
+  transition: all 3s ease;
+}
+.icon{
+  font-size: 18px;
+  font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+}
+.icon_large{
+  font-size: 25px;
+  font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+}
+/*******************************tabla descripcion usuarios***************/
+
+table.datos_user{
+  display: inline-block;
+  width: auto;
+  height: auto;
+  border-collapse:collapse;
+  padding:0px;
+  margin: 0px;
+  margin-left: 230px;
+  font-size: 18px;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+table.datos_user tr:hover{
+  background: white;
+  cursor: initial;
+}
+table.datos_user tr{
+  background: white;
+  cursor: initial;border: none;
+}
+table.datos_user td{
+  text-align:center;
+  color:#00607c;
+  font-weight: bold;
+  font-size: 16px;
+    border: none;
+
+}
+table.datos_user th{
+  border: none;
+  text-align:center;
+  color:#cc7000;
+  font-weight: bold;
+  font-size: 16px;
+  border-bottom:1px solid #cc7000;
+  background: white;   
+  height: 15px; 
+  padding: 5px;
+  width: 70px;
+}
+table.datos_user .normal{
+		width:100px;
+    text-align:left;
+    color:#00607c;
+    font-weight: bold;
+    font-size: 14px;
+    border: none;
+	}
+  table.datos_user .txt_email {
+  width:200px;
+	}
+table.datos_user .titulo {
+    width: 120px;
+    border: none;
+    position: relative;
+    padding: 1px;
+    font-size: 14px;
+    color: #cc7000;
+    text-align:right;
+    font-weight: bold;
+    width: 60px;
+	}
+  .fontawesome-plus-sign{
+    color: #ccc;font-size: 18px;
+    display: none;
+    width:20px;
+  }
+  .fontawesome-plus-sign:hover{
+     cursor:pointer;
+    color: #565656;
+  }
+  .img_user{
+    margin-top:0;
+    position: absolute;
+    display: inline-block;
+    width: 200px;
+    height: 250px;
+    vertical-align:middle;
+    line-height:250px;
+    background: white;
+    border: 3px solid #00ACB4;
+    /*padding: 10px;*/
+    text-align: center;
+  }
+  
+  .img_user img{
+    vertical-align:middle;
+    display: inline-block;
+    max-width: 190px;
+    max-height: 235px;     
+    background: white;
+  }
+  
+  .fontawesome-trash:hover{
+    color: darkred;
+ }
+ .fontawesome-edit:hover{
+    color: green;
+ }
+ 
+ .normal input[type=text]{
+   padding:2px;
+   font-size:14px;
+   color: #00607c;
+   font-weight: bold;
+   border: 1px solid transparent;
+   outline: none;
+   -webkit-transition: border 1s; /* Safari */
+    transition: border 1s;
+ }
+ .normal input[type=text].border{
+   box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+   border: 1px solid #E8E8E8;
+   font-size: 14px;
+   font-weight: initial;
+   -webkit-transition: border 1s; /* Safari */
+    transition: border 1s;
+ }
+ 
+
+.wrapper{
+  display:none;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #ccc;
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+  border-radius: 4px;
+}
+
+.wrapper input[type="radio"] {
+  display: none;
+}
+
+.wrapper label {
+  cursor: pointer;
+  width: 50%;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  display: block;
+  float: left;
+  transition: all 0.150s ease-in-out;
+  color: #ccc;
+}
+
+input[type="radio"]:checked + label {
+  background-color: #3FC380;
+  color: #fff;
+}
+input[type="radio"]:checked + .famele {
+  background-color: #FF4A4A;
+  color: #fff;
+}
+
+/*********************inpu file****************/
+.content_uploader {
+  display:none;
+  position: absolute;
+  border: 3px solid #00ACB4;
+  padding: 10px;
+  height: 250px;
+  width: 200px;
+  /*overflow: hidden;*/
+  margin: 0 auto;
+  z-index: 1;
+}
+.content_uploader2 {
+  position: absolute;
+  border: 3px solid #00ACB4;
+  padding: 10px;
+  height: 250px;
+  width: 200px;
+  /*overflow: hidden;*/
+  margin-left: 600px;
+  z-index: 1;
+}
+.img_user2{
+    margin-top:0;
+    margin-left: 600px;
+    position: absolute;
+    display: inline-block;
+    width: 200px;
+    height: 250px;
+    vertical-align:middle;
+    line-height:250px;
+    background: white;
+    border: 3px solid #00ACB4;
+    /*padding: 10px;*/
+    text-align: center;
+  }
+  
+  .img_user2 img{
+    vertical-align:middle;
+    display: inline-block;
+    max-width: 190px;
+    max-height: 235px;     
+    background: white;
+  }
+.content_uploader #box, .content_uploader2 #box {
+  background: transparent;
+  background-position: center center;
+  background-size: auto;
+  background-repeat: no-repeat;
+  color: #000;
+  padding: 0px;
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+.content_uploader #box img{
+    vertical-align:middle;
+    display: inline-block;
+    max-width: 190px;
+    max-height: 235px;     
+    background: white;
+  }
+.content_uploader #box .filefield, .content_uploader2 #box .filefield {
+  display: none;
+}
+.content_uploader #box p, .content_uploader2 #box p {
+  position: absolute;
+  top: 120%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  font-size: 20px;
+  margin-bottom: 0px;
+  margin-top: 0;
+  text-align: center;
+  cursor: pointer;
+  background-color: #00ACB4;
+  padding: 10px;
+  color: #fff;
+}
+.content_uploader #box .overlay_uploader, .content_uploader2 #box .overlay_uploader {
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  max-width: 90%;
+  max-height: 230px;
+  background: rgba(255, 255, 255, 0.7);
+  display: none;
+  border: 2px solid green;
+}
+
+.spinner {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  margin-top: 15px;
+  border: 3px solid #00ACB4;
+  border-radius: 50%;
+  display: none;
+  margin: 0 auto;
+  z-index: 999;
+}
+
+.spinner:before, .spinner:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 3px;
+  background-color: #00ACB4;
+  border-radius: 1.5px;
+  -webkit-transform-origin: 50% 0%;
+  transform-origin: 50% 0%;
+}
+
+.spinner:before {
+  height: 9px;
+  left: 13.5px;
+  top: 50%;
+  -webkit-animation: spin 2000ms linear infinite;
+  animation: spin 2000ms linear infinite;
+}
+
+.spinner:after {
+  height: 12px;
+  left: 13.5px;
+  top: 50%;
+  -webkit-animation: spin 500ms linear infinite;
+  animation: spin 500ms linear infinite;
+}
+
+@-webkit-keyframes spin {
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+.add_user{
+  color: #006085;
+}
+.add_user tr{
+  margin-bottom: 5px;  
+}
+.add_user td{
+  color: #006085;
+  padding: 5px;  
+  font-weight: bold;
+}
+.add_user td input{
+  border: none;
+  outline: none;
+  color: #B45F04;
+  border-bottom: 2px solid #A9BCF5;
+  height: 100%;
+  font-size: 14px;
+}
+
+.div_selec{
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #ccc;
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+  border-radius: 4px;
+}
+
+.div_selec input[type="radio"] {
+  display: none;
+}
+
+.div_selec label {
+  cursor: pointer;
+  width: 50%;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  display: block;
+  float: left;
+  transition: all 0.150s ease-in-out;
+  color: #ccc;
+}
+.datos_acceso{
+  border-collapse:collapse;
+  text-align:center;
+  color: #0A2229;
+}
+.datos_acceso th{
+  border-bottom: 1px solid  #0A2A22;
+}
+.datos_acceso th, .datos_acceso td{
+  padding: 5px;
+  width: 70px;
+}

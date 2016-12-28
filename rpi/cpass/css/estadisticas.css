@@ -1,0 +1,42 @@
+.menu_estadisticas{
+    color: black;
+}
+
+.tabla_estadisticas table{
+    color:black;
+    max-width: 600px;
+
+}
+
+.tabla_estadisticas table th{
+    width: auto;
+    padding: 5px;
+    margin: 0;
+    height: auto;
+    text-align: center;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+.tabla_estadisticas table td{
+    width: auto;
+    padding: 0;
+    margin: 0;
+    height: auto;
+    text-align: center;
+}
+.tabla_estadisticas table td:first-child,.tabla_estadisticas table td:last-child{
+    width: auto;
+    padding: 0;
+    margin: 0;
+    height: auto;
+
+}
+.tabla_estadisticas table tr{
+    border-bottom: 1px solid dodgerblue;
+}
+.manImg{
+    max-height: 40px;
+    max-width: 40px;
+    padding: 0;
+    margin: 0;
+}
