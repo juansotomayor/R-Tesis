@@ -30,10 +30,10 @@ void read_RFID(){
 
 void RFID_ENROLL(String idUser){
   rfid_detec = 0;
-  lcd.setCursor(3,0);
-  lcd.print("APROXIME LLAVE");
-  lcd.setCursor(0,1);
-  lcd.print("MAGNETICA AL SENSOR");
+  lcd.setCursor(2,0);
+  lcd.print("APROXIME ETIQUETA");
+  lcd.setCursor(3,1);
+  lcd.print("RFID AL SENSOR");
   timeA = millis();
   while((millis() - timeA) < 15000){
     if (rfid.isCard()) {
