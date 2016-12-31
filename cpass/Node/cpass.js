@@ -29,7 +29,7 @@ serialport.on('data', function(data){
     if(Data[0] == "FP"){
         if(Data[1] == "USER"){
             Access("biometria", Data[2], Data[3]);
-        }else if(Data[1] == "P"){
+        }else if(Data[1] == "A"){
             if(Data[2] == "ENROLL"){
                 CheckBiometric(Data[3], Data[4]);
             }else if(Data[2] == "FAIL"){
@@ -39,19 +39,18 @@ serialport.on('data', function(data){
                 AddUser("biometria", Code, Data[3], Data[4]);
             }
         }
-    }else if(Data[0] == "RFID"){
-        if(Data[1] == "USER"){
-            Access("rfid", Data[2], Data[3]);
-        }else if(Data[1] == "P"){
-            if(Data[2] == "ENROLL"){
-                CheckRFID("1", Data[2], Data[3], Data[4]);
-            }else if(Data[2] == "FAIL"){
-
-            }else{
-                AddUser('rfid', Data[2], Data[3], Data[4]);
-            }
+    }else if(Data[0] == "RFID"){ //Si Data[0] = "RFID" significa que se esta ejecutando una acción por medio de RFID
+        if(Data[1] == "USER"){   //Si Data[1] = "USER" significa que hay un usuario solicitando acceso.
+            Access("rfid", Data[2], Data[3]); //Envia a la función Access() 
+        }else if(Data[1] == "ADMIN"){ // el caso que Data[1] = "ADMIN" significa que el admin va a verifiar o agregar usuario RFID 
+           //Entra a la función CheckRFID() en donde verifica al usuario y lo registra 
+           CheckUser(Data[0], Data[2], Data[3], Data[4]);                
+           //Data[2] Corresponde al serial unico del usuario para identificarlos
+           //Data[3] Corresponde al ID de la etiqueta RFID, en hexadecimal
+           //Data[4] Corresponde al numero del módulo de control de acceso en este caso al 1            
         }
-    }else if(Data[0] == "USER"){
+    }
+    else if(Data[0] == "USER"){
         console.log("RBA");
         Access("KEYPAD", Data[1]);
     }else if(Data[0] == "ADMIN"){
